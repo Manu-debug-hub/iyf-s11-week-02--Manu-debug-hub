@@ -3,12 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Box Model Practice</title>,
-    <title>Card Component </title>
-
-    <div class="container">
-  <div class="box">Card Component.</div>
-    </div>
+    <title>Box Model Practice</title>
     
     <style>
         body {
@@ -24,39 +19,45 @@
             background-color: #e0e0e0;
             box-sizing: border-box;
         }
-    </style>
-    <style>
-    body {
-  font-family: sans-serif;
-        
-}
-.box {
-  width: 300px  
-  border: 1px solid blue;
-  background-color: lightgray;
-  padding-top: 0;
-  padding-right: 30px;
-  padding-bottom: 40px;
-  padding-left: 4em;
-  font-size: 15px  
-  <img src=(https://images.pexels.com/photos/30642031/pexels-photo-30642031.jpeg) />  
-}
 
-.container {
-  border: 20px solid blue;
-  margin: 40px;
-  padding: 20px;
-    
-}
+        .box {
+            width: 300px;
+            border: 1px solid blue;
+            background-color: lightgray;
+            padding-top: 0;
+            padding-right: 30px;
+            padding-bottom: 40px;
+            padding-left: 4em;
+            font-size: 15px;
+        }
 
-        
+        .box img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .container {
+            border: 20px solid blue;
+            margin: 40px;
+            padding: 20px;
+        }
     </style>
 </head>
 <body>
     <h1>Card Component</h1>
     <h2>Box Model Practice</h2>
+    
     <div class="broken-box">
         This is a box model demonstration
+    </div>
+
+    <div class="container">
+        <div class="box">
+            <img src="https://images.pexels.com/photos/30642031/pexels-photo-30642031.jpeg" alt="Card image">
+            Card Component.
+        </div>
     </div>
 </body>
 </html>
